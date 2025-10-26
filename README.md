@@ -1,2 +1,0 @@
-# Practice3
-SQL
