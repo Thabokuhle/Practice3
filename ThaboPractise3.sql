@@ -1,12 +1,12 @@
---Q1 Find records wher size is missing and the purchase_amout is greater than 50.
---Expected columns; Customerid, Size, Purchase_amount, Item_purchase.
+--Q1 Find records where size is missing and the purchase_amount is greater than 50.
+--Expected columns; Customer_id, Size, Purchase_amount, Item_purchase.
 ---------------------------------------------
 SELECT CUSTOMER_ID, SIZE, PURCHASE_AMOUNT, ITEM_PURCHASED
 FROM practise3.dataset3.shoping
 WHERE SIZE IS NULL
 AND PURCHASE_AMOUNT > 50;
 ---------------------------------------------
---Q2 List total number of purchases grouped by season, treating Null value as Unknwn season.
+--Q2 List total number of purchases grouped by season, treating NUll value as Unknwn season.
 --Expected columns: Season, Total_purchases.
 --------------------------------------------
 SELECT COALESCE(SEASON, 'UNKNOWN SEASON') AS SEASON,
